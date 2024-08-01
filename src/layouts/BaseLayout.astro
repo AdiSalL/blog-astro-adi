@@ -1,0 +1,48 @@
+---
+import Theme from "../components/Header/Theme.astro";
+import Navbar from "../components/Navbar.astro";
+const { pageTitle } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{pageTitle} || Ketikan Adi</title>
+  </head>
+  <body>
+    <Navbar />
+    <slot />
+  </body>
+  <script is:inline>
+    function getInitialTheme() {
+      const storedTheme = localStorage.getItem("theme");
+      if (storedTheme) return storedTheme;
+
+      // Fallback to system preference if no stored theme
+      return window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark"
+        : "light";
+    }
+
+    // Apply the theme to the document
+    function applyTheme(theme) {
+      document.documentElement.setAttribute("data-theme", theme);
+      localStorage.setItem("theme", theme);
+    }
+
+    // Initialize the theme
+    const initialTheme = getInitialTheme();
+    applyTheme(initialTheme);
+
+    // Set the checkbox state based on the current theme
+    document.querySelector("#themeToggle").checked = initialTheme === "dark";
+
+    // Handle the toggle switch
+    document.getElementById("themeToggle").addEventListener("change", (e) => {
+      const newTheme = e.target.checked ? "dark" : "light";
+      applyTheme(newTheme);
+    });
+  </script>
+</html>
