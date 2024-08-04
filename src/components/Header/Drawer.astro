@@ -1,13 +1,13 @@
 ---
-import Theme from "./Theme.astro";
+
 ---
 
-<div class="flex-none md:hidden z-10">
+<div class="flex-none z-10">
   <div class="drawer">
     <input id="my-drawer" type="checkbox" class="drawer-toggle" />
     <div class="drawer-content">
       <!-- Page content here -->
-      <label for="my-drawer" class="btn btn-ghost drawer-button">
+      <label for="my-drawer" class="btn drawer-button">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -36,9 +36,9 @@ import Theme from "./Theme.astro";
         </div>
         <div class="mt-5">
           <ul>
-            <li><a>Blogs</a></li>
+            <li><a href="/blog">Blogs</a></li>
             <li><a>About</a></li>
-            <li><a href="">Categories</a></li>
+            <li><a href="/tags">Categories</a></li>
           </ul>
         </div>
       </ul>

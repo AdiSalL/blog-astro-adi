@@ -1,6 +1,42 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-const pageTitle = "Homepage";
+import BlopPost from "../components/BlopPost.astro";
+const allPosts = await Astro.glob("./posts/*.md");
+const pageTitle = "Home Page";
 ---
 
-<BaseLayout pageTitle={pageTitle} />
+<BaseLayout pageTitle={pageTitle}>
+  <div class="mx-auto max-w-screen-xl min-h-screen">
+    <div class="w-full mx-auto h-96 flex flex-col justify-center items-center">
+      <h1 class="text-2xl font-semibold">welcome to adisalafudin blog</h1>
+      <p class="text-sm text-opacity-70 text-center mt-2">
+        hanya berisi tulisan seorang yang ngawur,<br /> membahas berbagai macam hal
+        yang saya pikirkan dan rasakan.
+      </p>
+      <br />
+    </div>
+    <div
+      class="w-max-screen flex flex-col items-stretch justify-start px-4 h-1/2"
+    >
+      <div class="underline">
+        <h2 class="text-xl font-mono pb-2 flex">
+          tulisan saya <div>:</div>
+        </h2>
+      </div>
+
+      <ul class="flex flex-row flex-wrap gap-5 md:gap-2">
+        {
+          allPosts
+            .slice(0, 3)
+            .map((post) => (
+              <BlopPost
+                url={post.url}
+                title={post.frontmatter.title}
+                description={post.frontmatter.description.slice(0, 150)}
+              />
+            ))
+        }
+      </ul>
+    </div>
+  </div>
+</BaseLayout>

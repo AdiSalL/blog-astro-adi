@@ -1,0 +1,43 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import BlopPost from "../../components/BlopPost.astro";
+
+export async function getStaticPaths() {
+  const allPosts = await Astro.glob("../posts/post-*.md");
+  const allCategories = [
+    ...new Set(allPosts.map((post) => post.frontmatter.categories).flat()),
+  ];
+
+  return allCategories.map((category) => {
+    const filteredPost = allPosts.filter((post) =>
+      post.frontmatter.categories.includes(category)
+    );
+    return {
+      params: { category },
+      props: { posts: filteredPost },
+    };
+  });
+}
+
+const { category } = Astro.params;
+const { posts } = Astro.props;
+
+const filteredPost = posts.filter((post) => {
+  post.frontmatter.categories?.includes(post);
+});
+---
+
+<BaseLayout pageTitle={category}>
+  <p>post with the category of {category}</p>
+  <ul>
+    {
+      filteredPost.map((post) => {
+        <BlopPost
+          title={post.frontmatter.title}
+          url={post.url}
+          description={post.description}
+        />;
+      })
+    }
+  </ul>
+</BaseLayout>

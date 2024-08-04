@@ -1,3 +1,38 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
+const allPosts = await Astro.glob("../pages/posts/post-*.md");
+const { frontmatter } = Astro.props;
+const tags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())];
 ---
+
+<BaseLayout pageTitle={frontmatter.title}>
+  <article class="prose p-2 text-justify">
+    <div class="mx-auto max-w-screen-xl min-h-screen">
+      <div class="py-10">
+        <h1 class="text-2xl text-center font-bold">{frontmatter.title}</h1>
+        <img src="" alt="" />
+      </div>
+      <div>
+        <div class="flex justify-between">
+          <a href="#">written by: {frontmatter.author}</a>
+
+          <div class="flex">
+            categories:
+            {
+              tags.map((tag) => (
+                <p class="tag">
+                  <a href={`/tags/${tag}`}>{tag}</a>
+                </p>
+              ))
+            }
+          </div>
+        </div>
+        <p class="text-align-justify mt-5">
+          {frontmatter.description}
+        </p>
+      </div>
+
+      <slot />
+    </div>
+  </article>
+</BaseLayout>
