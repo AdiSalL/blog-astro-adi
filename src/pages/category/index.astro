@@ -1,0 +1,29 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+const allPosts = await Astro.glob("../posts/post-*.md");
+const cateogries = [
+  ...new Set(allPosts.map((post) => post.frontmatter.categories).flat()),
+];
+const pageTitle = "Cateogry Page";
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <div
+    class="flex flex-col max-h-screen h-[82vh] items-center gap-2 justify-center"
+  >
+    <div class="">
+      <h1>Macam Macam Categories</h1>
+    </div>
+    <div class="flex flex-row justify-evenly gap-2">
+      {
+        cateogries.map((category) => (
+          <p class="text-2xl text-black ">
+            <a class="btn" href={`category/${category}`}>
+              {category}
+            </a>
+          </p>
+        ))
+      }
+    </div>
+  </div>
+</BaseLayout>

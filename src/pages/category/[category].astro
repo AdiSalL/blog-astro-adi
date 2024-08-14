@@ -1,24 +1,22 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import BlopPost from "../../components/BlopPost.astro";
-
 export async function getStaticPaths() {
   const allPosts = await Astro.glob("../posts/post-*.md");
-  const allCategories = [
+  const uniqueTags = [
     ...new Set(allPosts.map((post) => post.frontmatter.categories).flat()),
   ];
 
-  return allCategories.map((category) => {
-    const filteredPost = allPosts.filter((post) =>
+  return uniqueTags.map((category) => {
+    const filteredPosts = allPosts.filter((post) =>
       post.frontmatter.categories.includes(category)
     );
     return {
       params: { category },
-      props: { posts: filteredPost },
+      props: { posts: filteredPosts },
     };
   });
 }
-
 const { category } = Astro.params;
 const { posts } = Astro.props;
 
@@ -27,17 +25,16 @@ const filteredPost = posts.filter((post) => {
 });
 ---
 
-<BaseLayout pageTitle={category}>
-  <p>post with the category of {category}</p>
-  <ul>
-    {
-      filteredPost.map((post) => {
-        <BlopPost
-          title={post.frontmatter.title}
-          url={post.url}
-          description={post.description}
-        />;
-      })
-    }
-  </ul>
+<BaseLayout pageTitle={`${category} Page`}>
+  <p class="text-center text-2xl m-2">Posts with the category of {category}</p>
+
+  <div class="mx-auto max-w-screen-2xl min-h-screen flex justify-center">
+    <ul class="flex md:flex-row flex-col gap-x-2">
+      {
+        posts.map((post) => (
+          <BlopPost title={post.frontmatter.title} url={post.url} />
+        ))
+      }
+    </ul>
+  </div>
 </BaseLayout>
