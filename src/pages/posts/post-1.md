@@ -5,7 +5,7 @@ pubDate: 2024-07-26
 description: "Sejarah dunia dipenuhi oleh peristiwa-peristiwa penting yang membentuk masa depan umat manusia. Di Asia Tenggara, salah satu momen krusial adalah penjajahan Jepang di Indonesia, yang menyatukan rakyat Indonesia untuk melawan para penjajah hingga akhirnya mendeklarasikan proklamasi kemerdekaan. Sementara itu, di belahan dunia lain, dampak dari perang global menciptakan sejarah baru dengan penemuan senjata pemusnah massal oleh Robert J. Oppenheimer, yang mengguncang dunia. Artikel ini akan mengungkap perjalanan sejarah tersebut melalui dua tokoh penting: Soekarno, Bapak Proklamator Indonesia, dan Robert J. Oppenheimer, Bapak Bom Atom."
 author: "@adisalafudin"
 image:
-  url: "https://docs.astro.build/assets/rose.webp"
+  url: "/public/1.jpeg"
   alt: "The Astro logo on a dark background with a pink glow."
 categories: ["sejarah"]
 ---
