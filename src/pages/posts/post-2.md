@@ -1,14 +1,16 @@
 ---
-layout: ../../layouts/MarkDownPostLayout.astro
+layout: "../../layouts/MarkDownPostLayout.astro"
 title: "Anime yang Memberikan Arti dari 'Passion': Sound! Euphonium"
-pubDate: 2024-07-26
-description: "Sound! Euphonium adalah anime yang menceritakan tentang seorang siswa SMP bernama Kumiko Oumae, yang baru saja lulus dan akan memasuki SMA. Kumiko adalah anggota klub orkestra di SMP-nya dan mengikuti kompetisi di mana ia dan timnya berhasil meraih medali emas. Setelah pengumuman hasil, ia duduk di samping temannya, Reina, yang menangis. Kumiko bertanya, "Apakah kau menangis karena terharu, Reina?" Temannya, Reina, menjawab, "Aku kesal, aku kesal sampai rasanya ingin mati."
+pubDate: "2024-07-26"
+description: "Sound! Euphonium adalah anime yang menceritakan tentang seorang siswa SMP bernama Kumiko Oumae, yang baru saja lulus dan akan memasuki SMA..."
 author: "@adisalafudin"
 image:
-url: "https://docs.astro.build/assets/rose.webp"
-alt: "The Astro logo on a dark background with a pink glow."
-categories: ["sejarah"]
+  url: "https://docs.astro.build/assets/rose.webp"
+  alt: "The Astro logo on a dark background with a pink glow."
+categories:
+  - sejarah
 ---
+
 
 Sound! Euphonium adalah anime yang menceritakan tentang seorang siswa SMP bernama Kumiko Oumae, yang baru saja lulus dan akan memasuki SMA. Kumiko adalah anggota klub orkestra di SMP-nya dan mengikuti kompetisi di mana ia dan timnya berhasil meraih medali emas. Setelah pengumuman hasil, ia duduk di samping temannya, Reina, yang menangis. Kumiko bertanya, "Apakah kau menangis karena terharu, Reina?" Temannya, Reina, menjawab, "Aku kesal, aku kesal sampai rasanya ingin mati.
 
