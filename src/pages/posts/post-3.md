@@ -1,13 +1,13 @@
 ---
 layout: ../../layouts/MarkDownPostLayout.astro
-title: "Kelahiran Bapak Proklamator Dan Penyesalan Bapak Bom Atom"
-pubDate: 2024-07-26
-description: "Sejarah dunia dipenuhi oleh peristiwa-peristiwa penting yang membentuk masa depan umat manusia. Di Asia Tenggara, salah satu momen krusial adalah penjajahan Jepang di Indonesia, yang menyatukan rakyat Indonesia untuk melawan para penjajah hingga akhirnya mendeklarasikan proklamasi kemerdekaan. Sementara itu, di belahan dunia lain, dampak dari perang global menciptakan sejarah baru dengan penemuan senjata pemusnah massal oleh Robert J. Oppenheimer, yang mengguncang dunia. Artikel ini akan mengungkap perjalanan sejarah tersebut melalui dua tokoh penting: Soekarno, Bapak Proklamator Indonesia, dan Robert J. Oppenheimer, Bapak Bom Atom."
+title: "Wordpress Menguasai 40% Internet"
+pubDate: 2025-01-18
+description: "Anda ingin membuat website dengan mudah tanpa harus melakukan koding, Tentu wordpress jawabanya. Semua orang berpikir demikian hingga 40% situs website di internet saat ini merupakan wordpress"
 author: "@adisalafudin"
 image:
   url: "/public/1.jpeg"
   alt: "The Astro logo on a dark background with a pink glow."
-categories: ["sejarah"]
+categories: ["teknologi"]
 ---
 
 <span class="font-bold text-2xl">S</span>ejarah dunia dipenuhi oleh peristiwa-peristiwa penting yang membentuk masa depan umat manusia. Di Asia Tenggara, salah satu momen krusial adalah penjajahan Jepang di Indonesia, yang menyatukan rakyat Indonesia untuk melawan para penjajah hingga akhirnya mendeklarasikan proklamasi kemerdekaan. Sementara itu, di belahan dunia lain, dampak dari perang global menciptakan sejarah baru dengan penemuan senjata pemusnah massal oleh Robert J. Oppenheimer, yang mengguncang dunia. Artikel ini akan mengungkap perjalanan sejarah tersebut melalui dua tokoh penting: Soekarno, Bapak Proklamator Indonesia, dan Robert J. Oppenheimer, Bapak Bom Atom.

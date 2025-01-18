@@ -6,7 +6,7 @@ description: "Sejarah dunia dipenuhi oleh peristiwa-peristiwa penting yang membe
 author: "@adisalafudin"
 image:
   url: "/public/1.jpeg"
-  alt: "The Astro logo on a dark background with a pink glow."
+  alt: "Atas Foto Oppenheimer Bawah Merupakan Soekarno."
 categories: ["sejarah"]
 ---
 
