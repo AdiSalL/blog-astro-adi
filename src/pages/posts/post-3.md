@@ -10,6 +10,7 @@ image:
 categories: ["teknologi"]
 ---
 
+<!--
 <span class="font-bold text-2xl">S</span>ejarah dunia dipenuhi oleh peristiwa-peristiwa penting yang membentuk masa depan umat manusia. Di Asia Tenggara, salah satu momen krusial adalah penjajahan Jepang di Indonesia, yang menyatukan rakyat Indonesia untuk melawan para penjajah hingga akhirnya mendeklarasikan proklamasi kemerdekaan. Sementara itu, di belahan dunia lain, dampak dari perang global menciptakan sejarah baru dengan penemuan senjata pemusnah massal oleh Robert J. Oppenheimer, yang mengguncang dunia. Artikel ini akan mengungkap perjalanan sejarah tersebut melalui dua tokoh penting: Soekarno, Bapak Proklamator Indonesia, dan Robert J. Oppenheimer, Bapak Bom Atom.
 
 ### <br>
@@ -46,4 +47,4 @@ Pada bulan Agustus 1945, setelah Jepang menyerah kepada Sekutu akibat dijatuhkan
 
 Setelah Perang Dunia Kedua, Robert J. Oppenheimer menjadi semakin terkenal, tetapi juga mulai merasakan beban moral dari karyanya dalam pengembangan bom atom. Di Amerika Serikat, Oppenheimer menghadapi pengawasan ketat dari pemerintah, terutama setelah ia menyuarakan penyesalannya dan memperingatkan bahaya senjata nuklir di masa depan. Pada tahun 1954, Oppenheimer diadili dalam sidang keamanan oleh pemerintah AS, yang akhirnya mencabut izin keamanannya, meskipun ia tetap dikenang sebagai "Bapak Bom Atom."
 
-Di Indonesia, setelah kemerdekaan, politik dalam negeri tetap bergejolak. Adam Malik, seorang tokoh penting dalam diplomasi Indonesia, memainkan peran dalam transisi kekuasaan dari Soekarno ke Soeharto setelah peristiwa G30S/PKI pada tahun 1965. Soeharto, yang kemudian menjadi Presiden Indonesia selama lebih dari 30 tahun, diduga oleh beberapa pihak sebagai agen CIA, meskipun klaim ini masih kontroversial dan belum terbukti secara definitif. Peran Adam Malik dan isu keterlibatan CIA dalam peralihan kekuasaan ini menjadi bagian dari sejarah kompleks Indonesia pasca-kemerdekaan.
+Di Indonesia, setelah kemerdekaan, politik dalam negeri tetap bergejolak. Adam Malik, seorang tokoh penting dalam diplomasi Indonesia, memainkan peran dalam transisi kekuasaan dari Soekarno ke Soeharto setelah peristiwa G30S/PKI pada tahun 1965. Soeharto, yang kemudian menjadi Presiden Indonesia selama lebih dari 30 tahun, diduga oleh beberapa pihak sebagai agen CIA, meskipun klaim ini masih kontroversial dan belum terbukti secara definitif. Peran Adam Malik dan isu keterlibatan CIA dalam peralihan kekuasaan ini menjadi bagian dari sejarah kompleks Indonesia pasca-kemerdekaan. -->
