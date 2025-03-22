@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/MarkDownPostLayout.astro
-title: "Duolingo: Belajar Bahasa Seperti Bermain Game"
+title: "Duolingo dan Bagaimana Ia Membuat Kita Kecanduan"
 pubDate: 2025-01-18
-description: "Duolingo mengubah cara belajar bahasa dengan pendekatan gamifikasi yang membuat penggunanya kembali setiap hari. Apa rahasianya?"
+description: "Strategi Duolingo dalam membuat penggunanya Kecanduan untuk belajar"
 author: "@adisalafudin"
 image:
   url: "/public/duolingo.jpeg"
@@ -10,7 +10,7 @@ image:
 categories: ["teknologi", "edukasi"]
 ---
 
-<span class="font-bold text-2xl">D</span>Duolingo telah merevolusi cara belajar bahasa dengan menggabungkan gamifikasi dan pengulangan yang efektif. Aplikasi ini dirancang untuk membuat pembelajaran terasa seperti bermain game, sehingga pengguna tetap termotivasi dan kembali setiap hari.
+<span class="font-bold text-2xl"></span>Duolingo dan Bagaimana Ia Membuat Kita Kecanduan
 
 ### <span class="font-bold text-xl">Gamifikasi dalam Pembelajaran</span>
 
